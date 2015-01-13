@@ -1,7 +1,7 @@
 @import "../bower_components/normalize-scss/_normalize.scss";
 @import "../bower_components/typeplate-starter-kit/css/_typeplate.scss";
 @import "./mixins.scss";
-
+@import "../bower_components/font-awesome/css/font-awesome.min.css";
 /**
  * BOX-SIZING
  */
@@ -9,6 +9,18 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
+
+
+
+/*
+Variables
+*/
+
+$fontcolor: white;
+$darkbackground: #225378;
+$lightbackground: #1695A3;
+
+
 
 /**
  * GRIDS
@@ -20,7 +32,6 @@
     font-size: 0;
     text-align: justify;
     position: relative;
-
     & > * {
         font-size: medium;
         text-align: left;
@@ -28,7 +39,6 @@
         width: 100%;
         vertical-align: top;
     }
-
     &:after {
         display: inline-block;
         width: 100%;
@@ -36,16 +46,98 @@
         font-size: medium;
     }
 }
-
 @include gridify(2, 400);
 @include gridify(4, 600);
-
 /**
  * GENERAL
  */
 
-img {max-width:100;}
-
+img {
+    max-width: 100;
+}
 body {
     transition: opacity .25s ease;
 }
+
+
+
+
+
+
+.timedate {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+    z-index: -20;
+}
+
+.icon {
+    font-size: 3rem;
+    border-radius: 100%;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    border: 2px solid navy;
+    background-color:$lightbackground;
+    color: navy;
+}
+
+.icon:hover {
+    background-color: $darkbackground;
+    color: red;
+}
+
+i {
+    transform: translate(20px,-8px)
+}
+
+.content-container {
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.content {
+    margin: 8px;
+    position: relative;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: $lightbackground;
+}
+.triangle{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 10px;
+    left: 0;
+    transform: rotate(45deg);
+    background-color: $lightbackground;
+    z-index: -10;
+}
+
+.title {
+    color: $fontcolor;
+    margin: 0;
+}
+
+
+h3 {
+    border-bottom: 1px solid black;
+}
+
+@media screen and (min-width: 600px) {
+    .timedate{
+        position: fixed;
+        width: 125px;
+    }
+    .content-container {
+        margin-left: 125px;
+    }
+}
+
+
+
+
+
+
+
