@@ -116,6 +116,7 @@ i {
     transform: rotate(45deg);
     background-color: $lightbackground;
     z-index: -10;
+    opacity: 0
 }
 .title {
     color: $fontcolor;
@@ -126,10 +127,13 @@ h3 {
 }
 @media screen and (min-width: 600px) {
     .timedate {
-        position: fixed;
+        position: absolute;
         width: 125px;
     }
     .content-container {
         margin-left: 125px;
+    }
+    .triangle {
+        opacity: 1;
     }
 }

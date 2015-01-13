@@ -927,7 +927,8 @@ i {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: #1695A3;
-  z-index: -10; }
+  z-index: -10;
+  opacity: 0; }
 
 .title {
   color: white;
@@ -938,8 +939,10 @@ h3 {
 
 @media screen and (min-width: 600px) {
   .timedate {
-    position: fixed;
+    position: absolute;
     width: 125px; }
   .content-container {
-    margin-left: 125px; } }
+    margin-left: 125px; }
+  .triangle {
+    opacity: 1; } }
 
