@@ -863,14 +863,20 @@ body {
   height: 100px;
   z-index: -20; }
 
+.time {
+  color: navy;
+  width: 42px;
+  position: relative;
+  margin-left: 78px; }
+
 .icon {
   font-size: 3rem;
   -webkit-border-radius: 100%;
           border-radius: 100%;
   position: relative;
+  margin-top: -20px;
   width: 75px;
   height: 75px;
-  border: 2px solid navy;
   background-color: #1695A3;
   color: navy; }
 
@@ -879,9 +885,20 @@ body {
   color: red; }
 
 i {
-  -webkit-transform: translate(20px, -8px);
-      -ms-transform: translate(20px, -8px);
-          transform: translate(20px, -8px); }
+  -webkit-transform: translate(22px, -8px);
+      -ms-transform: translate(22px, -8px);
+          transform: translate(22px, -8px); }
+
+.timeLine {
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #1695A3;
+  top: 30px;
+  left: -89px;
+  z-index: -30; }
 
 .content-container {
   max-width: 960px;
