@@ -900,6 +900,10 @@ i {
   left: -89px;
   z-index: -30; }
 
+.timeLine:hover {
+  background-color: navy;
+  color: red; }
+
 .content-container {
   max-width: 960px;
   margin: 0 auto;

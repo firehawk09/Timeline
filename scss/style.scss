@@ -9,9 +9,6 @@
 *, *:before, *:after {
     box-sizing: border-box;
 }
-
-
-
 /*
 Variables
 */
@@ -19,9 +16,6 @@ Variables
 $fontcolor: white;
 $darkbackground: #225378;
 $lightbackground: #1695A3;
-
-
-
 /**
  * GRIDS
  */
@@ -58,26 +52,18 @@ img {
 body {
     transition: opacity .25s ease;
 }
-
-
-
-
-
-
 .timedate {
     padding: 5px;
     width: 100px;
     height: 100px;
     z-index: -20;
 }
-
 .time {
     color: navy;
     width: 42px;
     position: relative;
     margin-left: 78px;
 }
-
 .icon {
     font-size: 3rem;
     border-radius: 100%;
@@ -85,19 +71,16 @@ body {
     margin-top: -20px;
     width: 75px;
     height: 75px;
-    background-color:$lightbackground;
+    background-color: $lightbackground;
     color: navy;
 }
-
 .icon:hover {
     background-color: $darkbackground;
     color: red;
 }
-
 i {
-    transform: translate(22px,-8px)
+    transform: translate(22px, -8px)
 }
-
 .timeLine {
     position: absolute;
     height: 100%;
@@ -108,12 +91,15 @@ i {
     left: -89px;
     z-index: -30;
 }
+.timeLine:hover {
+    background-color: navy;
+    color: red;
+}
 .content-container {
     max-width: 960px;
     margin: 0 auto;
     position: relative;
 }
-
 .content {
     margin: 8px;
     position: relative;
@@ -121,8 +107,7 @@ i {
     border-radius: 10px;
     background-color: $lightbackground;
 }
-
-.triangle{
+.triangle {
     position: absolute;
     height: 40px;
     width: 40px;
@@ -132,19 +117,15 @@ i {
     background-color: $lightbackground;
     z-index: -10;
 }
-
 .title {
     color: $fontcolor;
     margin: 0;
 }
-
-
 h3 {
     border-bottom: 1px solid black;
 }
-
 @media screen and (min-width: 600px) {
-    .timedate{
+    .timedate {
         position: fixed;
         width: 125px;
     }
@@ -152,10 +133,3 @@ h3 {
         margin-left: 125px;
     }
 }
-
-
-
-
-
-
-
